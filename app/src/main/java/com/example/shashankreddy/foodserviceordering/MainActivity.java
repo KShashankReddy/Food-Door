@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
+import com.example.shashankreddy.foodserviceordering.fragments.PaymentFragment;
 import com.example.shashankreddy.foodserviceordering.fragments.CheckOutFragment;
 import com.example.shashankreddy.foodserviceordering.fragments.HomeFragment;
 import com.example.shashankreddy.foodserviceordering.fragments.OrdersFragment;
