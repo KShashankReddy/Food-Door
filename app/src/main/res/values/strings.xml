@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Food@Door</string>
+    <string name="action_settings">Settings</string>
+    <string name="deliveringto">DELIVERING TO</string>
+
+    <string name="bottom_home">Home</string>
+    <string name="bottom_orders">Orders</string>
+    <string name="bottom_userInfo">User</string>
+    <string name="bottom_checkout">Checkout</string>
+    <string name="delivery_from">From</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
