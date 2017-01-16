@@ -68,12 +68,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/shashankreddy/foodserviceordering/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="214">
               <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/shashankreddy/foodserviceordering/fragments/LoginFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1311">
+              <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
+              <folding>
+                <element signature="method#onActivityResult#0;class#LoginFragment#0" expanded="false" />
+                <element signature="method#submitForm#0;class#LoginFragment#0" expanded="false" />
+                <element signature="method#checkValidation#0;class#LoginFragment#0" expanded="false" />
+                <element signature="method#onPause#0;class#LoginFragment#0" expanded="false" />
+                <element signature="method#onResume#0;class#LoginFragment#0" expanded="false" />
+                <element signature="method#onDestroy#0;class#LoginFragment#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2101,6 +2118,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
+    <property name="device.picker.selection" value="Galaxy_Nexus_API_25" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -2680,21 +2698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/shashankreddy/foodserviceordering/fragments/LoginFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="126" column="52" selection-start-line="126" selection-start-column="52" selection-end-line="126" selection-end-column="52" />
-          <folding>
-            <element signature="method#onActivityResult#0;class#LoginFragment#0" expanded="false" />
-            <element signature="method#submitForm#0;class#LoginFragment#0" expanded="false" />
-            <element signature="method#checkValidation#0;class#LoginFragment#0" expanded="false" />
-            <element signature="method#onPause#0;class#LoginFragment#0" expanded="false" />
-            <element signature="method#onResume#0;class#LoginFragment#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#LoginFragment#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -2796,9 +2799,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/shashankreddy/foodserviceordering/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="214">
           <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/shashankreddy/foodserviceordering/fragments/LoginFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1311">
+          <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
+          <folding>
+            <element signature="method#onActivityResult#0;class#LoginFragment#0" expanded="false" />
+            <element signature="method#submitForm#0;class#LoginFragment#0" expanded="false" />
+            <element signature="method#checkValidation#0;class#LoginFragment#0" expanded="false" />
+            <element signature="method#onPause#0;class#LoginFragment#0" expanded="false" />
+            <element signature="method#onResume#0;class#LoginFragment#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#LoginFragment#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
