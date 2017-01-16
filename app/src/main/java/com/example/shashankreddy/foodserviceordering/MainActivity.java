@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.shashankreddy.foodserviceordering.fragments.CheckoutFragment;
 import com.example.shashankreddy.foodserviceordering.fragments.HomeFragment;
 import com.example.shashankreddy.foodserviceordering.utils.BottomNavigationViewHelper;
 
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.bottom_personalInfo :
                         break;
                     case R.id.bottom_checkout :
+                        fragment = new CheckoutFragment();
                         break;
                 }
                 fragmentManager.beginTransaction().replace(R.id.fragment_replaceable,fragment).commit();
