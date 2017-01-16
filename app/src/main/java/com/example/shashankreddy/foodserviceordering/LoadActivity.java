@@ -198,11 +198,12 @@ public class LoadActivity extends AppCompatActivity implements
                     startActivity(intent);
                     finish();
                 }
-                else {
+                else
+                {
                     Log.d(LoadActivity.class.getSimpleName(), response + "failed");
-                    /*Intent intent = new Intent(LoadActivity.this,.class);
+                    Intent intent = new Intent(LoadActivity.this,LoginActivity.class);
                     startActivity(intent);
-                    finish();*/
+                    finish();
                 }
 
             }

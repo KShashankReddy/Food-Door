@@ -1,20 +1,13 @@
 package com.example.shashankreddy.foodserviceordering;
 
 import android.os.Bundle;
-import android.support.design.internal.BottomNavigationItemView;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.shashankreddy.foodserviceordering.fragments.CheckoutFragment;
+import com.example.shashankreddy.foodserviceordering.fragments.PaymentFragment;
 import com.example.shashankreddy.foodserviceordering.fragments.HomeFragment;
 import com.example.shashankreddy.foodserviceordering.utils.BottomNavigationViewHelper;
 
@@ -41,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.bottom_personalInfo :
                         break;
                     case R.id.bottom_checkout :
-                        fragment = new CheckoutFragment();
+                        fragment = new PaymentFragment();
                         break;
                 }
                 fragmentManager.beginTransaction().replace(R.id.fragment_replaceable,fragment).commit();
