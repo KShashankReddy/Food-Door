@@ -40,6 +40,7 @@ public class HomeFragment extends Fragment {
 
     private TabLayout mTabLayout;
     private ViewPager mViewPager;
+    View returnView;
     private Toolbar mToolbar;
     public HomeFragment() {
 
@@ -49,21 +50,10 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View returnView = inflater.inflate(R.layout.fragment_home, container, false);
+        returnView = inflater.inflate(R.layout.fragment_home, container, false);
         mTabLayout = (TabLayout) returnView.findViewById(R.id.food_catatgeory_tab_layout);
         mViewPager = (ViewPager) returnView.findViewById(R.id.food_catageroy_view_pager);
         mToolbar = (Toolbar) returnView.findViewById(R.id.hometoolbar);
-        AppCompatActivity activity = (AppCompatActivity) getActivity();
-        activity.setSupportActionBar(mToolbar);
-
-        manageToolBar();
-        mTabLayout.addTab(mTabLayout.newTab().setText("Veg Food"));
-        mTabLayout.addTab(mTabLayout.newTab().setText("Non Veg Food"));
-        FoodCatageroyAdapter foodCatageroyAdapter = new FoodCatageroyAdapter(getChildFragmentManager(),mTabLayout.getTabCount());
-        mTabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-        mTabLayout.setupWithViewPager(mViewPager);
-        mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mTabLayout));
-        mViewPager.setAdapter(foodCatageroyAdapter);
         getFoodList();
         return returnView;
     }
@@ -113,6 +103,18 @@ public class HomeFragment extends Fragment {
                     }
 
                     AppController.getInstance().getmFoodItemList().setmFoodItemLists(foodItemLists);
+
+                    AppCompatActivity activity = (AppCompatActivity) getActivity();
+                    activity.setSupportActionBar(mToolbar);
+
+                    manageToolBar();
+                    mTabLayout.addTab(mTabLayout.newTab().setText("Veg Food"));
+                    mTabLayout.addTab(mTabLayout.newTab().setText("Non Veg Food"));
+                    FoodCatageroyAdapter foodCatageroyAdapter = new FoodCatageroyAdapter(getChildFragmentManager(),mTabLayout.getTabCount());
+                    mTabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+                    mTabLayout.setupWithViewPager(mViewPager);
+                    mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mTabLayout));
+                    mViewPager.setAdapter(foodCatageroyAdapter);
 
                 } catch (JSONException e) {
                     e.printStackTrace();

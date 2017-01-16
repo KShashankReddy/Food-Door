@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shashankreddy.foodserviceordering.fragments.FoodItemViewFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/food_item_view_title" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/food_item_view_image"
+        android:layout_below="@id/food_item_view_title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food_item_view_image"
+        android:id="@+id/food_item_view_reciepee"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food_item_view_reciepee"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:id="@+id/food_item_view_price"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food_item_view_reciepee"
+        android:layout_alignParentEnd="true"
+        android:textSize="15sp"
+        android:id="@+id/food_item_view_cat"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food_item_view_cat"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_to_cart_button"
+        android:id="@+id/foodItemAddToCart"/>
+
+
+</RelativeLayout>
